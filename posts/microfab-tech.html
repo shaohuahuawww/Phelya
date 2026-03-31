@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>微加工技术 | Phelya博客</title>
+    <meta
+      name="description"
+      content="微加工技术课件目录页，收录课程 PDF 预览入口。"
+    />
+    <style>
+      :root {
+        --bg: #070a14;
+        --surface: rgba(16, 15, 26, 0.8);
+        --surface-soft: rgba(255, 255, 255, 0.05);
+        --line: rgba(255, 169, 199, 0.3);
+        --text: #fff0f6;
+        --muted: rgba(255, 233, 242, 0.76);
+        --accent: #ff94b7;
+        --shadow: 0 20px 60px rgba(0, 0, 0, 0.32);
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, rgba(255, 148, 183, 0.1), transparent 18%),
+          radial-gradient(circle at top right, rgba(125, 211, 252, 0.08), transparent 22%),
+          linear-gradient(180deg, #060913 0%, #0a0f1a 100%);
+        font-family: "Avenir Next", "PingFang SC", "Microsoft YaHei", sans-serif;
+      }
+      a { color: inherit; text-decoration: none; }
+      h1, h2, h3, p { margin: 0; }
+      .shell {
+        width: min(1180px, calc(100% - 28px));
+        margin: 24px auto 42px;
+      }
+      .topbar,
+      .hero,
+      .catalog {
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        background: var(--surface);
+        backdrop-filter: blur(18px);
+        box-shadow: var(--shadow);
+      }
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 18px;
+        padding: 14px 18px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--accent);
+        font-weight: 800;
+      }
+      .brand img {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center 22%;
+      }
+      .back-link {
+        min-height: 42px;
+        padding: 10px 16px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        color: var(--muted);
+      }
+      .hero {
+        margin-top: 18px;
+        overflow: hidden;
+      }
+      .hero-cover {
+        min-height: 260px;
+        padding: 34px 30px;
+        display: grid;
+        align-items: end;
+        background:
+          linear-gradient(180deg, rgba(9, 7, 14, 0.2), rgba(8, 5, 14, 0.86)),
+          url("../assets/anime/kikuri-landing-bg.jpg") center/cover;
+      }
+      .eyebrow {
+        color: var(--accent);
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        font-size: 0.82rem;
+        font-weight: 800;
+      }
+      h1 {
+        margin-top: 12px;
+        font-size: clamp(2.4rem, 4vw, 4rem);
+        line-height: 1.06;
+      }
+      .hero-desc {
+        margin-top: 16px;
+        max-width: 760px;
+        color: var(--muted);
+        line-height: 1.9;
+      }
+      .catalog {
+        margin-top: 18px;
+        padding: 24px;
+      }
+      .catalog-subtitle {
+        margin-top: 6px;
+        color: var(--muted);
+      }
+      .chapter-list {
+        list-style: none;
+        margin: 18px 0 0;
+        padding: 0;
+        display: grid;
+        gap: 14px;
+      }
+      .chapter-item {
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: var(--surface-soft);
+      }
+      .chapter-link {
+        display: grid;
+        grid-template-columns: 72px 1fr auto;
+        gap: 16px;
+        align-items: center;
+        padding: 18px;
+      }
+      .chapter-index {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        border: 1px solid var(--line);
+        background: rgba(255, 148, 183, 0.12);
+        color: var(--accent);
+        font-weight: 800;
+      }
+      .chapter-name {
+        font-size: 1.18rem;
+      }
+      .chapter-desc {
+        margin-top: 6px;
+        color: var(--muted);
+        line-height: 1.8;
+      }
+      .chapter-tag {
+        display: inline-flex;
+        align-items: center;
+        min-height: 40px;
+        padding: 0 14px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255, 148, 183, 0.12);
+        color: var(--accent);
+        font-weight: 700;
+      }
+      @media (max-width: 720px) {
+        .shell { width: min(100% - 18px, 1180px); }
+        .topbar { flex-direction: column; align-items: stretch; }
+        .chapter-link { grid-template-columns: 56px 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="../index.html#math-sections">
+          <img src="../assets/anime/nav-avatar.jpg" alt="头像" />
+          <span>Phelya · 微加工技术</span>
+        </a>
+        <a class="back-link" href="../index.html#math-sections">返回首页</a>
+      </header>
+
+      <section class="hero">
+        <div class="hero-cover">
+          <div class="hero-copy">
+            <p class="eyebrow">Microfabrication Course</p>
+            <h1>微加工技术</h1>
+            <p class="hero-desc">
+              这里按课件名整理微加工技术课程内容。点进具体条目后会直接在带博客主题外壳的页面里预览 PDF。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <h2>课件目录</h2>
+        <p class="catalog-subtitle">当前已整理 8 份课件</p>
+
+        <ul class="chapter-list">
+          <li class="chapter-item"><a class="chapter-link" href="./microfab-tech-viewer.html?title=%E7%AC%AC%E4%B8%80%E8%AE%B2%20%E7%BB%AA%E8%AE%BA&file=%E7%AC%AC%E4%B8%80%E8%AE%B2%20%E7%BB%AA%E8%AE%BA.pdf"><span class="chapter-index">01</span><div><h3 class="chapter-name">第一讲 绪论</h3><p class="chapter-desc">点击进入课件预览页。</p></div><span class="chapter-tag">进入预览</span></a></li>
+          <li class="chapter-item"><a class="chapter-link" href="./microfab-tech-viewer.html?title=%E7%AC%AC%E4%BA%8C%E8%AE%B2%20%E7%AC%AC1%E7%AB%A0%20%E5%8D%95%E6%99%B6%E7%A1%85%E8%A1%AC%E5%BA%95%20%E6%99%B6%E4%BD%93%E7%BB%93%E6%9E%84%20%E7%A1%85%E9%94%AD%E5%88%B6%E5%A4%87&file=%E7%AC%AC%E4%BA%8C%E8%AE%B2%20%E7%AC%AC1%E7%AB%A0%20%E5%8D%95%E6%99%B6%E7%A1%85%E8%A1%AC%E5%BA%95%20%E6%99%B6%E4%BD%93%E7%BB%93%E6%9E%84%20%E7%A1%85%E9%94%AD%E5%88%B6%E5%A4%87.pdf"><span class="chapter-index">02</span><div><h3 class="chapter-name">第二讲 第1章 单晶硅衬底 晶体结构 硅锭制备</h3><p class="chapter-desc">点击进入课件预览页。</p></div><span class="chapter-tag">进入预览</span></a></li>
+          <li class="chapter-item"><a class="chapter-link" href="./microfab-tech-viewer.html?title=%E7%AC%AC%E4%B8%89%E8%AE%B2%20%E7%AC%AC1%E7%AB%A0%20%E5%8D%95%E6%99%B6%E7%A1%85%E8%A1%AC%E5%BA%95%20%E7%BC%BA%E9%99%B7%20%E6%9D%82%E8%B4%A8%20%E7%9B%B8%E5%9B%BE&file=%E7%AC%AC%E4%B8%89%E8%AE%B2%20%E7%AC%AC1%E7%AB%A0%20%E5%8D%95%E6%99%B6%E7%A1%85%E8%A1%AC%E5%BA%95%20%E7%BC%BA%E9%99%B7%20%E6%9D%82%E8%B4%A8%20%E7%9B%B8%E5%9B%BE.pdf"><span class="chapter-index">03</span><div><h3 class="chapter-name">第三讲 第1章 单晶硅衬底 缺陷 杂质 相图</h3><p class="chapter-desc">点击进入课件预览页。</p></div><span class="chapter-tag">进入预览</span></a></li>
+          <li class="chapter-item"><a class="chapter-link" href="./microfab-tech-viewer.html?title=%E7%AC%AC%E5%9B%9B%E8%AE%B2%20%E7%AC%AC2%E7%AB%A0%20%E5%A4%96%E5%BB%B6%20%E6%B0%94%E7%9B%B8%E5%A4%96%E5%BB%B6&file=%E7%AC%AC%E5%9B%9B%E8%AE%B2%20%E7%AC%AC2%E7%AB%A0%20%E5%A4%96%E5%BB%B6%20%E6%B0%94%E7%9B%B8%E5%A4%96%E5%BB%B6.pdf"><span class="chapter-index">04</span><div><h3 class="chapter-name">第四讲 第2章 外延 气相外延</h3><p class="chapter-desc">点击进入课件预览页。</p></div><span class="chapter-tag">进入预览</span></a></li>
+          <li class="chapter-item"><a class="chapter-link" href="./microfab-tech-viewer.html?title=%E7%AC%AC%E4%BA%94%E8%AE%B2%20%E7%AC%AC2%E7%AB%A0%20%E6%B0%94%E7%9B%B8%E5%A4%96%E5%BB%B6%20%E6%9D%82%E8%B4%A8%E5%86%8D%E5%88%86%E5%B8%83&file=%E7%AC%AC%E4%BA%94%E8%AE%B2%20%E7%AC%AC2%E7%AB%A0%20%E6%B0%94%E7%9B%B8%E5%A4%96%E5%BB%B6%20%E6%9D%82%E8%B4%A8%E5%86%8D%E5%88%86%E5%B8%83.pdf"><span class="chapter-index">05</span><div><h3 class="chapter-name">第五讲 第2章 气相外延 杂质再分布</h3><p class="chapter-desc">点击进入课件预览页。</p></div><span class="chapter-tag">进入预览</span></a></li>
+          <li class="chapter-item"><a class="chapter-link" href="./microfab-tech-viewer.html?title=%E7%AC%AC%E5%85%AD%E8%AE%B2%20%E7%AC%AC2%E7%AB%A0%20%E5%A4%96%E5%BB%B6%20%E5%B7%A5%E8%89%BA%E5%8F%8A%E7%BC%BA%E9%99%B7%E6%A3%80%E6%B5%8B%20%E4%B9%A0%E9%A2%98&file=%E7%AC%AC%E5%85%AD%E8%AE%B2%20%E7%AC%AC2%E7%AB%A0%20%E5%A4%96%E5%BB%B6%20%E5%B7%A5%E8%89%BA%E5%8F%8A%E7%BC%BA%E9%99%B7%E6%A3%80%E6%B5%8B%20%E4%B9%A0%E9%A2%98.pdf"><span class="chapter-index">06</span><div><h3 class="chapter-name">第六讲 第2章 外延 工艺及缺陷检测 习题</h3><p class="chapter-desc">点击进入课件预览页。</p></div><span class="chapter-tag">进入预览</span></a></li>
+          <li class="chapter-item"><a class="chapter-link" href="./microfab-tech-viewer.html?title=%E7%AC%AC%E4%B8%83%E8%AE%B2%20%E7%AC%AC3%E7%AB%A0%20%E6%B0%A7%E5%8C%96%E5%B1%82%E5%88%B6%E5%A4%87&file=%E7%AC%AC%E4%B8%83%E8%AE%B2%20%E7%AC%AC3%E7%AB%A0%20%E6%B0%A7%E5%8C%96%E5%B1%82%E5%88%B6%E5%A4%87.pdf"><span class="chapter-index">07</span><div><h3 class="chapter-name">第七讲 第3章 氧化层制备</h3><p class="chapter-desc">点击进入课件预览页。</p></div><span class="chapter-tag">进入预览</span></a></li>
+          <li class="chapter-item"><a class="chapter-link" href="./microfab-tech-viewer.html?title=%E7%AC%AC%E5%85%AB%E8%AE%B2%20%E7%AC%AC3%E7%AB%A0%20%E6%9D%82%E8%B4%A8%E5%86%8D%E5%88%86%E5%B8%83%20%E8%B4%A8%E9%87%8F%E6%A3%80%E6%B5%8B&file=%E7%AC%AC%E5%85%AB%E8%AE%B2%20%E7%AC%AC3%E7%AB%A0%20%E6%9D%82%E8%B4%A8%E5%86%8D%E5%88%86%E5%B8%83%20%E8%B4%A8%E9%87%8F%E6%A3%80%E6%B5%8B.pdf"><span class="chapter-index">08</span><div><h3 class="chapter-name">第八讲 第3章 杂质再分布 质量检测</h3><p class="chapter-desc">点击进入课件预览页。</p></div><span class="chapter-tag">进入预览</span></a></li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
